@@ -1,0 +1,649 @@
+/* Basic Elements */
+* {
+	box-sizing: border-box;
+}
+
+html, body { 
+	height: 100%; 
+	width: 100%;
+	position: relative;
+}
+
+/* top left bliss text rules */
+.wrapper h1 {
+	font-size: 4.5em;
+	display: inline-block;
+}
+/* top left bliss text link rules */
+.wrapper a {
+	color: #ED4A67;
+	text-decoration: none;
+	
+}
+/* group of the header rules */
+.wrapper {
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+/* top navigation menu rules */
+nav.main-menu {
+	font: 1em Helvetica, Arial, sans-serif;
+	background-color: #FFFFFF;
+	padding: 20px;
+	margin-top: 30px;
+	display: flex;
+	vertical-align: top;
+	overflow: hidden;
+	position: relative;
+	float: right;
+}
+/* link rules for the nav menu */
+nav.main-menu a {
+	color: #33353A;		/* changes font colour */
+	font: 1em Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	padding: 15px;
+	margin-right: 10px;
+}
+
+/* setting what the nav menu looks like when mouse hovers on link */
+nav.main-menu a:hover {
+	color: #FFFFFF;		/* changes font colour */
+	background-color: #ED4A67;
+	text-decoration: none; 
+}
+.download {
+	margin-top: 40px;
+	display: inline-block;
+}
+
+/* style the pink buttons throughout the page */
+.download a {
+	font: 1em Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	background-color: #ED4A67;
+	border-radius: 5px;		/* round the button 5px */
+	color: #FFFFFF;
+	/* set positioning of button */
+	padding: 15px;
+	margin-top: 15px;
+}
+
+/* style the button to change in opacity when hover over button */
+.download a:hover, .download a:active { 
+	/* when hover over link rules */
+	opacity: 0.75;
+}
+
+/* hero image implementation */
+.banner {
+	/* use image in media folder */
+	background-image: url(../media/app-layout-line-1920x700.png);
+	width: 100%;
+	height: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed;	/* create parallax scrolling */
+}
+
+/* overall content on the banner */
+.banner-content {
+	width: 30%;
+	display: inline-block;
+	margin-left: 100px;
+}
+
+/* set the positioning of the text over the hero image */
+.banner-content h2 {
+	color: black;
+	text-align: left;
+}
+
+/* set the download link of the content banner to be left */
+.banner-content a {
+	margin-left: 100px;
+}
+
+/* set the light grey background for certain sections */
+.grey {
+	background-color: #F3F4FB;
+	width: 100%;	/* bleed from width to width */
+	display: inline-block;
+	margin: 0 auto;
+}
+
+/* set the dark grey background for certain sections */
+.dark-grey {
+	background-color: #33353A;
+	width: 100%;		/* bleed from width to width */
+	display: inline-block;
+	margin: 0 auto;
+}
+
+/* set the main section h2 rules (for the headings for each section) */ 
+.main h2 {
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+/* set all images to have a bottom padding, leaving padding between img and end of section */
+img {
+	padding-bottom: 25px; 
+}
+
+/* style the img in what is bliss section */
+.whatisbliss img {
+	display: inline-block;
+}
+
+/* adjust the alignment and positioning of the content in what is bliss section */
+.content-whatisbliss {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	vertical-align: top;
+	text-align: center;
+}
+/* set the right content to have a boundary */
+.right-content {
+	width: 35%;
+	display: inline-block;
+}
+
+.right-content a {
+	margin: 0 auto;
+}
+
+/* adjust the alignment of the text in what is bliss section */
+.whatisbliss p {
+	text-align: left;
+}
+
+/* set all of the content in mission section */
+.mission {
+	text-align: center;
+}
+/* special rules for mission statement section */
+.mission-statement {
+	display: inline-block;
+	text-align: left;
+	width: 40%
+}
+/* set positioning of the info content in mission section */
+.mission-info {
+	display: inline-flex;
+	justify-content: center;
+}
+/* set all of the h5 elements in mission section */
+.mission h5 {
+	text-align: center;
+}
+/* set all of the p elements in mission section */
+.mission-info p {
+	text-align: left;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.meditation-mission, .actions-mission, .positive-mission {
+	width: 33%;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+}
+
+/* style the img in features section to have padding of 25px*/
+.features img {
+	padding: 25px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+/* all of the content of features to be centered */
+.features-group {
+	margin: 0 auto;
+	display: inline-flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.features-info {
+	text-align: left;
+	margin: 0 auto;
+	width: 50%;
+}
+
+/* all of the h5 elements of features to be centered */
+.features h5 {
+	text-align: center;
+}
+
+.actions-group h5, .meditation-group h5{
+	line-height: 3em;
+}
+
+.aboutus p {
+	text-align: left;
+	padding-bottom: 5%;
+	padding-top: 0;
+	margin: 0 auto;
+}
+
+.about-info {
+	text-align: left;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.team-members {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.team-members img {
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.team-members p {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.team-member1, .team-member2, .team-member3, .team-member4 {
+	width: 24%;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+}
+
+ul {
+	list-style: none;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.contact-content {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.contact-message {
+	width: 40%;
+	display: inline-block;
+	float: left;
+}
+.right-column {
+	float: right;
+	display: inline-block;
+}
+.right-column img {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+/* remove margins from contact info list */
+.contact-info a {
+	margin: 0 0;
+	color: #ED4A67;
+}
+.contact-info a:hover {
+	opacity: 0.75;
+}
+.contact-info p {
+	margin: 0 0;
+	padding-bottom: 5%;
+}
+.social-media a:hover , a:active {
+	opacity: 0.7;
+}
+.social-image {
+	display: inline-flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 100%;
+}
+.social-image img {
+	margin: 0 0;
+	padding: 10px;
+}
+
+.social-media h5 {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+.social-media {
+	margin: 0 auto;
+	width: 100%;
+}
+
+
+.footer-content {
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+}
+/* adjusting the positionings of h3 elements in the footer section */
+.footer h3 {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* setting the bottom navigation menu */
+.footer-nav {
+	width: 100%;
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+}
+
+/* all of the footer list elements */
+.footer li {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 15px;
+	opacity: 0.85;
+	letter-spacing: 0.5px;
+}
+/* social media icon images to have spacing */
+.footer-social img {
+	padding: 20px;
+}
+/* social media grouping */
+.footer-social {
+	display: inline-flex;
+	justify-content: center;
+	width: 100%;
+}
+/* social media icons to change in opacity when pointer hover over */
+.footer-social a:hover , a:active {
+	opacity: 0.7;
+}
+
+/* footer h4 element rules */
+.footer h4 {
+	opacity: 0.7;
+	margin: 0 auto;
+	padding: 15px;
+	display: inline-flex;
+	justify-content: center;
+	width: 100%;
+}
+
+/* link of the footer rules */
+.footer a:link , .footer a:visited {
+	color: #F3F4FB;
+	font: 1em Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+/* style the links to change colour when hover over button */
+.footer a:hover , a:active {
+	color: #ED4A67;
+	text-decoration: none;
+}
+
+/* horizontal line rules */
+hr {
+	width: 80%;
+	color: #F3F4FB;
+	opacity: 0.5;
+}
+
+/* adjusting the positionings of the content when width is less than 1000px wide */
+@media screen and (max-width: 1000px){
+	/* change the banner content text to get smaller */
+	.banner h2 {
+		font-size: 2.5em;
+	}
+	/* make the features section to form a column */
+	.features-group, .team-members {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+	}
+	/* make the imgs in features to be centered */
+	.meditation-group img, .actions-group img, .positive-group img, .team-member1 img, .team-member2 img, .team-member3 img, .team-member4 img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	/* change the width of the team members when it is in a column */
+	.team-member1, .team-member2, .team-member3, .team-member4 {
+		width: 60%;
+	}
+}
+/* adjusting the positionings of the content when width is less than 900px wide */
+@media screen and (max-width: 900px) {
+	/* change the wrapper groupings */
+	.wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+	/* edit the h1 element */
+	.wrapper h1 {
+		text-align: center;
+		width: 100%;
+		font-size: 4.5em;
+		display: inline-block;
+		margin: 0 auto;
+		line-height: 100px;
+	}
+	nav.main-menu {
+		flex-direction: column;
+		margin: 0 auto;
+		justify-content: center;
+		float: left;
+		text-align: center;
+		width: 100%;
+	}
+	/* when the browser is less than 900, change the banner image to be different */
+	.banner {
+		background-image: url(../media/app-layout-line-small.png);
+	}
+
+	/* set the positioning of the text over the hero image */
+	.banner-content h2 {
+		color: black;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 100px;
+		display: block;
+		width: 100%;
+
+	}
+	.banner-content {
+		display: block;
+		margin: 0 auto;
+		width: 70%;
+	}
+	/* make the download button to be centered */
+	.download {
+		margin: 0 auto;
+		display: flex;
+	}
+	.download a {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 70px;
+		margin-top: 70px;
+	}
+	/* make the what is bliss information to be displayed in a column */
+	.whatisbliss {
+		flex-direction: column;
+	}
+	.content-whatisbliss {
+		display: block;
+	}
+	.right-content {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.mission-statement {
+		width: 75%;
+	}
+	/* make the mission information to be displayed in a column */
+	.mission-info {
+		flex-direction: column;
+	}
+	/* change the positioning of the mission paragraphs */
+	.meditation-mission, .actions-mission, .positive-mission {
+		margin: 0 auto;
+		width: 80%;
+	}	
+}
+/* adjusting the positionings of the content when width is less than 830px wide */
+@media screen and (max-width: 830px) {
+	.contact-content {
+		flex-direction: column;
+	}
+	.contact-message, .right-column {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+/* adjusting the positionings of the content when width is less than 400px wide */
+@media screen and (max-width: 400px){
+	.banner h2 {
+		font-size: 2em;
+	}
+	/* make the main menu links to form a column */
+	nav.main-menu {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+
+	}
+	/* make the features section to form a column */
+	.features-group, .team-members {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
+	/* make the imgs in features to be centered */
+	.meditation-group img, .actions-group img, .positive-group img, .team-member1 img, .team-member2 img, .team-member3 img, .team-member4 img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+	/* Critical position and size styles */
+	min-height: 100%;
+	min-width: 100%;
+	background-color: #FFFFFF; /* Change to the background colour
+	of your website */
+	position: relative;
+	top: 0;
+	bottom: 100%;
+	left: 0;
+	z-index: 1;
+	/* non-critical appearance styles */
+	padding: 0;
+}
+
+/* style guide rules */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* the fonts */
+p {
+	/* set font rules */
+	font: 1em Helvetica, Arial, sans-serif;
+	line-height: 20px;
+	color: #33353A;
+	/*width: 35%;		/* set limit of less than 75 characters long */
+	/* set the spacing */
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 0px;
+	padding-bottom: 50px;
+}
+/* Website name font */
+h1 {
+	/* set font rules */
+	font: 6em Oswald, Francois One, sans-serif;
+	font-family: 'Oswald', sans-serif;
+	color: #ED4A67;
+	letter-spacing: 1px;
+	font-weight: bold;
+	/* set the spacing */
+	line-height: 10px;
+	margin-left: 30px;
+}
+
+/* Subheadings for different topics font */
+h2 {
+	/* set font rules */
+	font: 3em Oswald, Francois One, sans-serif;
+	letter-spacing: 1px;
+	color: #33353A;
+	/* set the spacing */
+	margin: 0;
+	
+}
+/* Subheadings for different topics font (in white color)*/
+h3 {
+	/* set font rules */
+	font: 3em Oswald, Francois One, sans-serif;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	/* set the spacing */
+	margin: 0;
+	margin-left: 40px;
+}
+/* same as paragraph font but in white color */
+h4 {
+	/* set font rules */
+	font: 0.8em Helvetica, Arial, sans-serif;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	/* set spacing */
+	line-height: 20px;
+	/*width: 35%;		/* set limit of less than 75 characters long */
+	margin-left: 50px; 
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+h5 {
+	/* set font rules */
+	font: 2em Oswald, Francois One, sans-serif;
+	letter-spacing: 1px;
+	color: #33353A;
+	/* set the spacing */
+	margin: 0;
+}
+h6 {
+	font: 1em Oswald, Francois One, sans-serif;
+	color: #F3F4FB;
+	opacity: 0.7;
+	margin: 0 auto;
+	padding-left: 15px;
+	letter-spacing: 2px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+/* unordered list rules */
+ul {
+	font: 1em Helvetica, Arial, sans-serif;
+	line-height: 20px;
+	color: #33353A;
+	width: 100%;
+}

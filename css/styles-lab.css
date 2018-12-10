@@ -1,0 +1,103 @@
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+
+/* basic elements */
+* {
+	box-sizing: border-box;
+}
+body { 
+	font: 16px tahoma, sans-serif;
+	line-height: 1.35;
+	color: #555753; 
+	background: #fff; 
+	}
+h2, h3, h4, h5, h6 { 
+	font: 1.4em georgia, serif;
+	letter-spacing: 1px; 
+	color: HotPink
+	}
+h1{ 
+	font: 3em georgia, serif;
+	letter-spacing: 1px; 
+	color: HotPink;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #BF4242;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B6C649;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #B6C649;
+	}
+
+
+/* specific divs */
+.wrapper { 
+	padding: 0 175px 0 110px;  
+	margin: 25px; 
+	position: relative;
+	}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.clear-floats {
+	clear: both;
+}
+.smaller {
+	font-size: 75%;
+}
+.nobullets li {
+ 	list-style: None;
+ }
+
+.main-content {
+ 	width: 70%;
+ 	float: left;
+ }
+.sidebar {
+	width: 30%;
+	float: left;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.color-box-group {
+	width: 20%;
+	float: left;
+}
+.color-box1 {
+	height: 5em;
+	background-color: #ED4A67;
+}
+.color-box2 {
+	height: 5em;
+	background-color: #A9AFB5;
+}
+.color-box3 {
+	height: 5em;
+	background-color: #FFFFFF;
+}
+.color-box4 {
+	height: 5em;
+	background-color: #58BFBA;
+}
+.color-box5 {
+	height: 5em;
+	background-color: #33353A;
+}
+

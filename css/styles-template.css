@@ -1,0 +1,743 @@
+/* Basic Elements */
+* {
+	box-sizing: border-box;
+}
+
+html, body { 
+	height: 100%; width: 100%;
+}
+
+/* top navigation menu rules */
+nav.main-menu {
+	background-color: #FFFFFF;
+	padding: 20px;
+	margin-top: 30px;
+	display: flex;
+	vertical-align: top;
+	overflow: hidden;
+	position: relative;
+	float: right;
+}
+
+/* link rules for the nav menu */
+nav.main-menu a {
+	color: #33353A;		/* changes font colour */
+	text-decoration: none;
+	padding: 15px;
+	margin-right: 10px;
+}
+
+/* setting what the nav menu looks like when mouse hovers on link */
+nav.main-menu a:hover {
+	color: #FFFFFF;		/* changes font colour */
+	background-color: #ED4A67;
+}
+
+/* group of the header rules */
+.wrapper {
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* logo image rules to be at the top left of page */
+.wrapper img {
+	margin: 0;
+	vertical-align: top;
+}
+
+.wrapper a {
+	color: #ED4A67;
+
+}
+
+/* top left bliss text rules */
+.wrapper h1 {
+	font-size: 4.5em;
+	display: inline-block;
+}
+
+/* hero image implementation */
+.banner {
+	/* use image in media folder */
+	background-image: url(../media/app-layout-1920x700.png);
+	width: 100%;
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/* set the positioning of the text over the hero image */
+.banner-content h2 {
+	color: black;
+	text-align: left;
+	margin-left: 70px;
+	margin-top: 40px;
+}
+
+/* style the pink buttons throughout the page */
+.buttons a{
+	text-decoration: none;
+	background: #ED4A67;
+	color: #FFFFFF;
+	/* set positioning of button */
+	padding: 15px;
+	margin-top: 15px;
+	margin-left: 140px;
+	border-radius: 5px;		/* round the button 5px */
+}
+
+/* style the button to change in opacity when hover over button */
+.buttons a:hover, .buttons a:active { 
+	/* when hover over link rules */
+	opacity: 0.75;
+}
+/* set the light grey background for certain sections */
+.grey {
+	background-color: #F3F4FB;
+	width: 100%;	/* bleed from width to width */
+	background-size: 100%;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+/* set the dark grey background for certain sections */
+.dark-grey {
+	background-color: #33353A;
+	width: 100%;		/* bleed from width to width */
+	display: inline-block;
+	margin: 0 auto;
+}
+
+/* set the main section h2 rules (for the headings for each section) */ 
+.main h2 {
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+/* set all images to have a bottom padding, leaving padding between img and end of section */
+img {
+	padding-bottom: 25px; 
+}
+
+/* style the img in what is bliss section */
+.whatisbliss img {
+	display: inline-block;
+}
+
+/* adjust the alignment and positioning of the content in what is bliss section */
+.content-whatisbliss {
+	display: flex;
+	justify-content: center;
+	vertical-align: top;
+	text-align: center;
+}
+
+/* adjust the text in what is bliss section */
+.content-whatisbliss p {
+	width: 25%;
+	
+}
+
+/* adjust the button in what is bliss section */
+.content-whatisbliss button {
+	display: flex;
+	position: absolute;
+	margin-top: 200px;
+}
+
+/* adjust the alignment of the text in what is bliss section */
+.whatisbliss p {
+	text-align: left;
+}
+
+/* set all of the content in mission section */
+.mission {
+	text-align: center;
+}
+/* special rules for mission statement section */
+.mission-statement {
+	display: inline-block;
+	text-align: left;
+	width: 40%
+}
+/* set positioning of the info content in mission section */
+.mission-info {
+	display: inline-flex;
+	justify-content: center;
+}
+/* set all of the h5 elements in mission section */
+.mission h5 {
+	text-align: center;
+}
+/* set all of the p elements in mission section */
+.mission-info p {
+	text-align: left;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.meditation-mission, .actions-mission, .positive-mission {
+	width: 33%;
+}
+
+/* style the img in features section to have padding of 25px*/
+.features img {
+	padding: 25px;
+}
+
+/* all of the content of features to be centered */
+.features-group {
+	display: flex;
+	justify-content: center;
+}
+
+/* all of the h5 elements of features to be centered */
+.features h5 {
+	text-align: center;
+}
+
+.actions-group h5, .meditation-group h5{
+	line-height: 3em;
+}
+
+.aboutus p {
+	text-align: center;
+	padding-bottom: 5%;
+	padding-top: 0;
+	margin: 0 auto;
+}
+
+.about-info {
+	text-align: left;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.team-members {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.team-member1, .team-member2, .team-member3, .team-member4 {
+	width: 24%;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+}
+
+
+ul {
+	list-style: none;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.contact-content {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+
+}
+.contact-message {
+	width: 40%;
+	display: inline-block;
+	float: left;
+}
+.right-column {
+	float: right;
+	display: inline-block;
+}
+.right-column img {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+/* remove margins from contact info list */
+.contact-info a {
+	margin: 0 0;
+}
+.contact-info p {
+	margin: 0 0;
+	padding-bottom: 5%;
+}
+
+.footer-content {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+/* setting the bottom navigation menu */
+.footer-nav {
+	float: left;
+	width: 30%;
+	padding: 10px;
+}
+
+/* all of the footer list elements */
+.footer li {
+	display: flex;
+	padding: 15px;
+}
+
+/* link of the footer rules */
+.footer a:link , .footer a:visited {
+	color: #FFFFFF;
+	font: 1em Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+/* style the links to change colour when hover over button */
+.footer a:hover , a:active {
+	color: #ED4A67;
+}
+
+/* styling the contact us info in the footer */
+.footer-contact {
+	float: left;
+	width: 70%;
+	padding: 10px;
+}
+
+/* removing margins in h4 for the footer contact group */
+.footer-contact h4 {
+	margin: 0 0;
+}
+.footer-contact a {
+	margin: 0 0;
+}
+/* styling the social media links in the footer */
+.footer-social {
+	float: right;
+	width: 20%;
+}
+/* removing margins in h4 for the footer contact group and setting text alignment */
+.footer-social h4 {
+	margin: 0 0;
+	text-align: left;
+	padding-top: 10px;
+}
+/* setting the horizontal link to not be the full length of the width */
+hr {
+	color: #F3F4FB;
+	width: 80%;
+}
+.after-line {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+/* adjusting the positionings of h3 elements in the footer section */
+.footer h3 {
+	width: 70%;
+	float: left;
+	margin: 0 auto;
+}
+/* set positioning of the last modified text */
+.last-modified {
+	width: 20%;
+	float: right;
+	margin-right: 0;
+}
+
+/* adjusting the positionings of the content when width is between 1330px and 851px */
+@media screen and (max-width: 1330px) and (min-width: 851px){
+	/* make the footer content section to form a column between each other */
+	.bottom-nav, .footer-contact, .footer-social {
+		margin-right: auto;
+		margin-left: auto;
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+
+	}
+	/* make the imgs in features to be centered */
+	.meditation-group img, .actions-group img, .positive-group img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	/* make the features section to form a column */
+	.features-group {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/* adjusting the positionings of the content when width is between 850px and 750px */
+@media screen and (max-width: 850px) and (min-width: 750px){
+	.wrapper img {
+		display: block;
+		align-content: center;
+	}
+	.banner h2 {
+		font-size: 2.5em;
+	}
+	nav.main-menu {
+		flex-direction: column;
+	}
+	/* make the features section to form a column */
+	.features-group {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+	}
+	/* make the imgs in features to be centered */
+	.meditation-group img, .actions-group img, .positive-group img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* make the footer content section to form a column between each other */
+	.bottom-nav, .footer-contact, .footer-social {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+}
+/* adjusting the positionings of the content when width is between 749px and 401 */
+@media screen and (max-width: 749px) and (min-width: 401px) {
+	.wrapper img {
+		display: block;
+		align-content: center;
+	}
+	.banner h2 {
+		font-size: 2em;
+	}
+	nav.main-menu {
+		flex-direction: column;
+	}
+	/* make the features section to form a column */
+	.features-group {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+	}
+	/* make the imgs in features to be centered */
+	.meditation-group img, .actions-group img, .positive-group img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	/* make the footer content section to form a column between each other */
+	.bottom-nav, .footer-contact, .footer-social {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+/* adjusting the positionings of the content when width is between 400px and 300px */
+@media screen and (max-width: 400px) and (min-width: 300px) {
+	.wrapper img {
+		display: block;
+		align-content: center;
+	}
+	.banner h2 {
+		font-size: 2em;
+	}
+	.banner {
+
+	}
+	/* make the main menu links to form a column */
+	nav.main-menu {
+		flex-direction: column;
+	}
+	/* make the features section to form a column */
+	.features-group {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+	}
+	/* make the imgs in features to be centered */
+	.meditation-group img, .actions-group img, .positive-group img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* make the footer content section to form a column between each other */
+	.bottom-nav, .footer-contact, .footer-social {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+	/* Critical position and size styles */
+	min-height: 100%;
+	min-width: 100%;
+	background-color: #FFFFFF; /* Change to the background colour
+	of your website */
+	position: relative;
+	top: 0;
+	bottom: 100%;
+	left: 0;
+	z-index: 1;
+
+	/* non-critical appearance styles */
+	padding: 0;
+}
+
+/* style guide rules */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* the fonts */
+p {
+	/* set font rules */
+	font: 1em Helvetica, Arial, sans-serif;
+	line-height: 20px;
+	color: #33353A;
+	/*width: 35%;		/* set limit of less than 75 characters long */
+	/* set the spacing */
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 0px;
+	padding-bottom: 50px;
+}
+/* Website name font */
+h1 {
+	/* set font rules */
+	font: 6em Oswald, Francois One, sans-serif;
+	font-family: 'Oswald', sans-serif;
+	color: #ED4A67;
+	letter-spacing: 1px;
+	font-weight: bold;
+	/* set the spacing */
+	line-height: 10px;
+	margin-left: 30px;
+}
+
+/* Subheadings for different topics font */
+h2 {
+	/* set font rules */
+	font: 3em Oswald, Francois One, sans-serif;
+	letter-spacing: 1px;
+	color: #33353A;
+	/* set the spacing */
+	margin: 0;
+	
+}
+/* Subheadings for different topics font (in white color)*/
+h3 {
+	/* set font rules */
+	font: 3em Oswald, Francois One, sans-serif;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	/* set the spacing */
+	margin: 0;
+	margin-left: 40px;
+}
+/* same as paragraph font but in white color */
+h4 {
+	/* set font rules */
+	font: 1em Helvetica, Arial, sans-serif;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	/* set spacing */
+	line-height: 20px;
+	/*width: 35%;		/* set limit of less than 75 characters long */
+	margin-left: 50px; 
+	margin-right: 50px;
+	margin-bottom: 50px;
+	
+}
+
+h5 {
+	/* set font rules */
+	font: 2em Oswald, Francois One, sans-serif;
+	letter-spacing: 1px;
+	color: #33353A;
+	/* set the spacing */
+	margin: 0;
+}
+
+
+
+/* demonstrate a dark background for typography heading */
+.highlight-background {
+	background-color: #33353A;
+	margin-right: 840px;
+}
+
+/* rules for block quote */
+.quotation {
+	/* set font rules */
+	font: 3em Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: #33353A;
+	/* get the quotations */
+	quotes: "\201C""\201D""\2018""\2019";
+	margin: 0 auto;
+}
+.quotation:before {
+	/* open quotation rules*/
+	content: open-quote;
+	display: inline;
+	color: #ED4A67;
+	font-size: 3em;
+}
+.quotation:after {
+	/* closing quotation rules */
+	content: close-quote;
+	display: inline;
+	color: #ED4A67;
+	font-size: 3em;
+}
+
+/* figure rules */
+figure {
+	/* set font rules */
+	float: right;
+	font: 1em Helvetica, Arial, sans-serif;
+	text-align: center;
+	margin-right: 100px;
+}
+/* unvisited link */
+a:link {
+	/* set font rules for links */
+	font: 1em Helvetica, Arial, sans-serif;
+	color: #33353A;
+}
+/* visited link */
+a:visited {
+	text-decoration: none; 
+	color: #FFFFFF;
+}
+/* mouse over link and selected link */
+a:hover, a:active { 
+	/* when hover over link rules */
+	text-decoration: underline;
+	color: #ED4A67;
+}
+
+/* unordered list rules */
+ul {
+	font: 1em Helvetica, Arial, sans-serif;
+	line-height: 20px;
+	color: #33353A;
+}
+
+/* LAB 8 */
+.google, .google:visited {
+	text-decoration: none ;
+	background: pink;
+	color: white;
+	padding: 15px;
+	border-radius: 25px;
+	margin-bottom: 50px;
+}
+
+.button-blue, .button-blue:visited {
+	text-decoration: none;
+	background: dodgerblue;
+	color: white;
+	padding: 15px;
+	margin-bottom: 50px;
+}
+
+/* color blocks */
+.color-box-group {
+	width: 20%;
+	float: left;
+	/* text of the colour hexdecimal is centered */
+	text-align: center;
+}
+/* color block 1 (bright red-pink)*/
+.color1 {
+	height: 5em;
+	background-color: #ED4A67;
+
+}
+/* color block 2 (light grey)*/
+.color2 {
+	height: 5em;
+	background-color: #F3F4FB;
+}
+/* color block 3 (white)*/
+.color3 {
+	height: 5em;
+	background-color: #FFFFFF;
+}
+/* color block 4 (teal)*/
+.color4 {
+	height: 5em;
+	background-color: #58BFBA;
+}
+/* color block 5 (dark grey)*/
+.color5 {
+	height: 5em;
+	background-color: #33353A;
+}
+
+/*center the color text*/
+.center-paragraph {
+	margin: 0 auto;
+}
+/* background solid colors for each subheading topics */
+.palette {
+	background-color: #FFFFFF;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+}
+.typography {
+	background-color: #FFFFFF;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+}
+.visual {
+	background-color: #33353A;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+}
+.structure{
+	background-color: #58BFBA;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+}
+.background {
+	background-color: #F3F4FB;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+}
+.menu {
+	background-color: #FFFFFF;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+}
+.contactInformation {
+	background-color: #F3F4FB;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+
+}

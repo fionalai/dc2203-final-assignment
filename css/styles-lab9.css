@@ -1,0 +1,406 @@
+/* Basic Elements */
+* {
+	box-sizing: border-box;
+}
+html, body { 
+	height: 100%; width: 100%;
+}
+
+nav.main-menu {
+	background-color: #FFFFFF;
+	padding: 20px;
+	margin-left: 100px;
+
+}
+nav.main-menu a {
+	color: #33353A;
+	text-decoration: none;
+	padding: 15px;
+	margin-right: 10px;
+}
+
+nav.main-menu a:hover {
+	color: #FFFFFF;
+	background-color: #ED4A67;
+}
+
+nav.dropdown-option {
+	padding: 0px;
+	margin-top: 25px;
+	color: #FFFFFF;
+	background-color: Tomato;
+	word-wrap: break-word;
+}
+
+nav.dropdown-option ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+
+nav.dropdown-option li {
+	background-color: Tomato;
+	display: inline-block;
+}
+
+nav.dropdown-option a {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: White;
+	text-decoration: none;
+}
+
+nav.dropdown-option a:hover {
+	color: Black;
+}
+
+nav.dropdown-option ul ul {
+	display: none;
+	position: absolute;
+	top: 60px; /* the height of the main nav */
+ }
+
+ /* Display Dropdowns on Hover */
+nav.dropdown-option ul li:hover > ul {
+	display: inherit;
+}
+
+/* First Tier Dropdown */
+nav.dropdown-option ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Change this in order to change the Dropdown symbol*/
+li > a:after { content: ' +'; }
+li > a:only-child:after { content: ''; }
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+	/* Critical position and size styles */
+	min-height: 100%;
+	min-width: 100%;
+	background-color: #84817a; /* Change to the background colour
+	of your website */
+	position: relative;
+	top: 0;
+	bottom: 100%;
+	left: 0;
+	z-index: 1;
+
+	/* non-critical appearance styles */
+	padding: 0;
+}
+/* Navigation Menu - Background */
+.hamburger {
+	/* Describe the margin and padding to be 0 so the background blocks can fill the webpage */
+	/* critical sizing and position styles */
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	list-style: none;
+	background: #111;
+}
+ul.hamburger {
+	margin: 0;
+}
+.nav-item a {
+	/* non-critical appearance styles */
+	display: block;
+	padding: 1em;
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+.nav-item a:hover {
+	color: Yellow;
+}
+/* Nav Trigger */
+.nav-trigger {
+	/* critical styles - hide the checkbox input */
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+	}
+label[for="nav-trigger"] {
+	/* critical positioning styles */
+	position: fixed;
+	padding-left: 15px;
+	z-index: 2;
+
+	/* non-critical appearance styles */
+	cursor: pointer;
+	font-size: 36px;
+}
+
+/* Calls elements with class "nav-trigger" and sets styles when
+status is checked (class is applied to a checkbox) */
+.nav-trigger:checked + label {
+	left: 215px;
+}
+.nav-trigger:checked ~ .site-wrap {
+	left: 200px;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+/* Without this, the body has excess horizontal scroll when
+the menu is open */
+overflow-x: hidden;
+
+.wrapper {
+	margin: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* the fonts */
+p {
+	/* set font rules */
+	font: 1em Helvetica, Arial, sans-serif;
+	line-height: 20px;
+	color: #33353A;
+	width: 35%;		/* set limit of less than 75 characters long */
+	/* set the spacing */
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 0px;
+	padding-bottom: 50px;
+}
+/* Website name font */
+h1 {
+	/* set font rules */
+	font: 6em Oswald, Francois One, sans-serif;
+	font-family: 'Oswald', sans-serif;
+	color: #ED4A67;
+	letter-spacing: 1px;
+	font-weight: bold;
+	/* set the spacing */
+	line-height: 10px;
+	margin-left: 30px;
+}
+
+/* Subheadings for different topics font */
+h2 {
+	/* set font rules */
+	font: 3em Oswald, Francois One, sans-serif;
+	letter-spacing: 1px;
+	color: #33353A;
+	/* set the spacing */
+	margin: 0;
+	margin-left: 40px;
+}
+/* Subheadings for different topics font (in white color)*/
+h3 {
+	/* set font rules */
+	font: 3em Oswald, Francois One, sans-serif;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	/* set the spacing */
+	margin: 0;
+	margin-left: 40px;
+}
+/* same as paragraph font but in white color */
+h4 {
+	/* set font rules */
+	font: 1em Helvetica, Arial, sans-serif;
+	letter-spacing: 0px;
+	color: #F3F4FB;
+	/* set spacing */
+	line-height: 20px;
+	width: 35%;		/* set limit of less than 75 characters long */
+	margin-left: 50px; 
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+/* list rules */
+ul {
+	margin-left: 30px;
+}
+
+/* demonstrate a dark background for typography heading */
+.highlight-background {
+	background-color: #33353A;
+	margin-right: 840px;
+}
+
+/* rules for block quote */
+.quotation {
+	/* set font rules */
+	font: 3em Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: #33353A;
+	/* get the quotations */
+	quotes: "\201C""\201D""\2018""\2019";
+	margin: 0 auto;
+}
+.quotation:before {
+	/* open quotation rules*/
+	content: open-quote;
+	display: inline;
+	color: #ED4A67;
+	font-size: 3em;
+}
+.quotation:after {
+	/* closing quotation rules */
+	content: close-quote;
+	display: inline;
+	color: #ED4A67;
+	font-size: 3em;
+}
+
+/* figure rules */
+figure {
+	/* set font rules */
+	float: right;
+	font: 1em Helvetica, Arial, sans-serif;
+	text-align: center;
+	margin-right: 100px;
+}
+/* unvisited link */
+a:link {
+	/* set font rules for links */
+	font: 1em Helvetica, Arial, sans-serif;
+	color: #33353A;
+}
+/* visited link */
+a:visited {
+	text-decoration: none; 
+	color: #33353A;
+}
+/* mouse over link and selected link */
+a:hover, a:active { 
+	/* when hover over link rules */
+	text-decoration: underline;
+	color: #ED4A67;
+}
+
+/* unordered list rules */
+ul {
+	font: 1em Helvetica, Arial, sans-serif;
+	line-height: 20px;
+	color: #33353A;
+}
+
+/* image rules */
+img {
+	margin-left: 50px;
+}
+
+.google, .google:visited {
+	text-decoration: none ;
+	background: pink;
+	color: white;
+	padding: 15px;
+	border-radius: 25px;
+	margin-bottom: 50px;
+}
+
+.button-blue, .button-blue:visited {
+	text-decoration: none;
+	background: dodgerblue;
+	color: white;
+	padding: 15px;
+	margin-bottom: 50px;
+}
+
+.logo {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+/* color blocks */
+.color-box-group {
+	width: 20%;
+	float: left;
+	/* text of the colour hexdecimal is centered */
+	text-align: center;
+}
+/* color block 1 (bright red-pink)*/
+.color1 {
+	height: 5em;
+	background-color: #ED4A67;
+
+}
+/* color block 2 (light grey)*/
+.color2 {
+	height: 5em;
+	background-color: #F3F4FB;
+}
+/* color block 3 (white)*/
+.color3 {
+	height: 5em;
+	background-color: #FFFFFF;
+}
+/* color block 4 (teal)*/
+.color4 {
+	height: 5em;
+	background-color: #58BFBA;
+}
+/* color block 5 (dark grey)*/
+.color5 {
+	height: 5em;
+	background-color: #33353A;
+}
+
+/*center the color text*/
+.center-paragraph {
+	margin: 0 auto;
+}
+/* background solid colors for each subheading topics */
+.palette {
+	background-color: #FFFFFF;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+}
+.typography {
+	background-color: #FFFFFF;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+}
+.visual {
+	background-color: #33353A;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+}
+.structure{
+	background-color: #58BFBA;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+}
+.background {
+	background-color: #F3F4FB;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+}
+.menu {
+	background-color: #FFFFFF;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+}
+.contactInformation {
+	background-color: #F3F4FB;
+	width: 100%;
+	background-size: 100%;
+	display: inline-block;
+
+}
